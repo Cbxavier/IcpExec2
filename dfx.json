@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "exec2_backend": {
+      "main": "src/exec2_backend/main.mo",
+      "type": "motoko"
+    },
+    "exec2_frontend": {
+      "dependencies": [
+        "exec2_backend"
+      ],
+      "source": [
+        "src/exec2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "exec2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
